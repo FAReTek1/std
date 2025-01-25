@@ -6,3 +6,7 @@
 #   [dependencies]
 #   dependencyName = "https://github.com/FAReTek1/std@<the version you want to use>"
 
+%include std\\math.gs
+%include std\\string.gs
+%include std\\algo.gs
+%include std\\emoji.gs
