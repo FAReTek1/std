@@ -17,5 +17,5 @@ Then, add this %include to your gs file:
 ```
 you can also use this to just %include everything
 ```rs
-%include backpack/std/std/__init__.gs
+%include backpack/std/std
 ```
