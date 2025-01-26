@@ -1,5 +1,5 @@
 # std.gs
-This is a standard library which is built upon the orignal [goboscript](https://github.com/aspizu/goboscript) standard library.
+This is a standard library which is built upon [goboscript](https://github.com/aspizu/goboscript)'s [original standard library](https://github.com/aspizu/goboscript/tree/523b4aa68530e504c125d48121307430db6a236f/std).
 It is being made to be used with [backpack](https://github.com/aspizu/backpack)
 
 ## Installation
