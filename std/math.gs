@@ -70,6 +70,10 @@
 # Return `log base b of x`
 %define LOGB(b,x) ln(x) / ln(b)
 
+# Power function that always works so long as it's not a complex result (doesn't break with negative base)
+func safepow(x, y) {
+    return (POW(abs($x), $y)) * (SGNBOOL(not($x < 0 and $y % 2)));
+}
 
 # Hyperbolic trig functions
 %define ACOSH(X) ln((X)+sqrt((X)*(X)-1))
