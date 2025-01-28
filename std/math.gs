@@ -55,6 +55,12 @@
 # true -> 1, false -> -1
 %define SGNBOOL(b) (2 * (b)) - 1
 
+# Linear interpolation from a to b, with a ratio of t
+%define LERP(A,B,T) (A) + ((B) - (A)) * (T)
+
+# Work out the ratio of val from a to b
+%define INVLERP(VAL,A,B) ((VAL) - (A)) / ((B) - (A))
+
 # Hyperbolic trig functions
 %define ACOSH(X) ln((X)+sqrt((X)*(X)-1))
 %define ASINH(X) ln((X)+sqrt((X)*(X)+1))
