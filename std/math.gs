@@ -64,6 +64,9 @@
 # Work out the ratio of val from a to b
 %define INVLERP(VAL,A,B) ((VAL) - (A)) / ((B) - (A))
 
+# Simple macro for squaring things. Can make certain scripts a bit less tedious to write
+%define SQUARE(V) ((V) * (V))
+
 # Hyperbolic trig functions
 %define ACOSH(X) ln((X)+sqrt((X)*(X)-1))
 %define ASINH(X) ln((X)+sqrt((X)*(X)+1))
