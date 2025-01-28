@@ -8,7 +8,7 @@ To use this, make sure to install [backpack](https://github.com/aspizu/backpack)
 You can use the standard library by adding these lines to goboscript.toml:
 ```toml
 [dependencies]
-dependencyName = "https://github.com/FAReTek1/std@<the version you want to use>"
+std = "https://github.com/FAReTek1/std@<the version you want to use>"
 ```
 
 Then, add this %include to your gs file:

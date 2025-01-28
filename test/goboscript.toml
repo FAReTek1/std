@@ -4,4 +4,4 @@ frame_interpolation = false
 high_quality_pen = false
 
 [dependencies]
-dependencyName = "https://github.com/FAReTek1/std"
+std = "https://github.com/FAReTek1/std@v0.0.6"

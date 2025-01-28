@@ -3,5 +3,5 @@
 costumes "blank.svg";
 
 onflag {
-    say "Hello, World!";
+    say reverse("sigma");
 }
