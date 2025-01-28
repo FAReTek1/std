@@ -67,6 +67,10 @@
 # Simple macro for squaring things. Can make certain scripts a bit less tedious to write
 %define SQUARE(V) ((V) * (V))
 
+# Return `log base b of x`
+%define LOGB(b,x) ln(x) / ln(b)
+
+
 # Hyperbolic trig functions
 %define ACOSH(X) ln((X)+sqrt((X)*(X)-1))
 %define ASINH(X) ln((X)+sqrt((X)*(X)+1))
