@@ -8,6 +8,10 @@
 
 ################################################################
 
+%include backpack/std/std/bitw
+
+%include backpack/std/std/char
+
 %include backpack/std/std/math
 
 %include backpack/std/std/string
