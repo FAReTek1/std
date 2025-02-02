@@ -58,8 +58,6 @@
 # 'Undefined' behaviour when used with non-numbers or booleans
 %define SIGN(V) (V > 0) - (V[i] == "-")
 
-# true -> 1, false -> -1
-%define SGNBOOL(b) (2 * (b)) - 1
 
 # Linear interpolation from a to b, with a ratio of t
 %define LERP(A,B,T) (A) + ((B) - (A)) * (T)
@@ -89,3 +87,11 @@ func safepow(x, y) {
 # Constants
 %define PI 3.141592653589793
 %define E 2.718281828459045
+
+# boolean things
+
+# true -> 1, false -> -1
+%define SGNBOOL(b) (2 * (b)) - 1
+
+# If both are true, sum is 2, if none are true, sum is 0, and if 1 is true, sum is 1
+%define XOR(a,b) (1 == ((a) + (b)))
