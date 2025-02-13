@@ -1,7 +1,7 @@
-%include ../std/char
+%include backpack/std/std.gs
 
 costumes "blank.svg";
 
 onflag {
-    say unicode[]
+    say ord("Ⓢ");
 }

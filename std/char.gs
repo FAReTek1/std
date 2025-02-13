@@ -53,7 +53,7 @@ func ord(char) {
             local islower = costume_name() == "_char//abcdefghijklmnopqrstuvwxyz";
 
             switch_costume old_cos;
-            return chr_idx + 65 + 32 * islower;
+            return chr_idx + 64 + 32 * islower;
 
         } elif $char == 0 { 
             # 0 is a special case because it is considered equal to the tab character
