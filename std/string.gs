@@ -404,7 +404,7 @@ func startswith(text, start) {
 func startswith_from_idx(text, start, i) {
     local i = $i;
     repeat length $start {
-        if $text[i] != $start[i] {
+        if $text[i] != $start[1 + i - $i] {
             return false;
         }
     }
