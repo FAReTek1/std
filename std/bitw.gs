@@ -69,8 +69,7 @@ func bwAND_str (bits1, bits2) {
     ret = "";
     repeat length($bits1) {
         ret &= "" + ($bits1[i] and $bits2[i]);
-
-        i += 1;
+        i++;
     }
 
     return ret;
@@ -84,13 +83,24 @@ func bwOR_str (bits1, bits2) {
     ret = "";
     repeat length($bits1) {
         ret &= "" + ($bits1[i] or $bits2[i]);
-
-        i += 1;
+        i++;
     }
 
     return ret;
 }
 
+func bwNOT_str (bits) {
+    # Perform a bitwise OR on two strings. Assumes that they are equal length
+    local i = 1;
+
+    ret = "";
+    repeat length($bits) {
+        ret &= "" + not $bits[i];
+        i++;
+    }
+
+    return ret;
+}
 
 func bwXOR_str (bits1, bits2) {
     # Perform a bitwise OR on two strings. Assumes that they are equal length
@@ -99,9 +109,8 @@ func bwXOR_str (bits1, bits2) {
     ret = "";
     repeat length($bits1) {
         # you can find the XOR macro in std/math.gs
-        ret &= "" + (1 == ($bits1[i] + $bits2[i]));
-
-        i += 1;
+        ret &= "" + ($bits1[i] != $bits2[i]);
+        i++;
     }
 
     return ret;
